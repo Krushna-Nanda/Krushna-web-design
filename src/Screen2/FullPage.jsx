@@ -1,17 +1,17 @@
-import pufcornOnSofa from "../assets/Images/Pufcorn_On_Sofa.jpg"
+import pufcornOnSofa from "../assets/Images/Pufcorn_On_Sofa.jpg";
 
 export default function FullPage_Screen2() {
-    const divStyle = {
-        backgroundImage: `url(${pufcornOnSofa})`,
-      
-      };
+  const divStyle = {
+    backgroundImage: `url(${pufcornOnSofa})`,
+  };
+
   return (
     <div
-     style={divStyle}
-    className="bg-black bg-cover object-cover bg-center bg-no-repeat bg-w text-white w-full h-[100vh]">
+      style={divStyle}
+      className="bg-black bg-cover object-cover bg-center bg-no-repeat bg-w text-white w-full h-[100vh]">
       <div className="relative bg-black/80 w-full h-full flex flex-col justify-center px-20 gap-y-10">
         <p className="w-full text-4xl px-2 text-gray-300 font-sans">Discover the Best Videos</p>
-        <div className="flex gap-x-5">
+        <div className="flex gap-x-48">
           <div className="flex gap-x-4">
             <h className="bg-[#3D3D42] border-[0.1px] border-gray-200 h-fit px-3.5 py-0.5 rounded-md text-xl text-[#E5EODF]">
               1
