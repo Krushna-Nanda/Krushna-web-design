@@ -3,9 +3,9 @@
     
   export default function FullPage_Screen4() {
     return (
-      <div className="bg-gray-300  font-sans lg:min-h-[200vh] lg:py-20 lg:px-5">
-        <div className="bg-black text-white h-full lg:rounded-lg px-2 lg:px-20 py-10">
-          <h2 className="text-2xl  lg:text-5xl mb-10 text-start font-bold tracking-wide">Discover Your Personalized Watchlist</h2>
+      <div className="bg-gray-300  font-sans   ">
+        <div className="bg-black text-white h-full  px-2 lg:px-20 py-10">
+          <h2 className="text-2xl  lg:text-4xl mb-10 text-center font-bold tracking-wide">Discover Your Personalized Watchlist</h2>
   
           <HoverableCart heading={"Save for Later"} title={"Easily keep track of videos you want to watch later by adding them to your personalized watchlist."} color="from-purple-500 to-indigo-500" />
           <HoverableCart heading={"Personalized Recommendations"} title={"Get recommendations tailored just for you based on your viewing habits and preferences."} color="from-orange-500 to-yellow-500" />

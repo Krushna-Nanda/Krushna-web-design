@@ -14,8 +14,8 @@ function Cart({ heading, title }) {
 
 export default function FullPage_Screen5() {
     return (
-        <div className="w-full lg:min-h-[100vh] px-2 py-4 lg:py-12 bg-gray-100">
-            <h1 className="text-lg text-start lg:text-4xl lg:text-center mb-10 font-bold text-gray-800">Connecting You to the World of Video</h1>
+        <div className="w-full lg:min-h-[100vh] px-2 pb-4  lg:py-12 bg-black">
+            <h1 className="text-lg text-start lg:text-4xl lg:text-center mb-10 font-bold text-white">Connecting You to the World of Video</h1>
 
             <div className="container mx-auto flex flex-col lg:flex-row flex-wrap justify-center gap-y-5 lg:gap-8 lg:pr-8"> {/* Added pr-8 for padding-right */}
                 <Cart heading={"Global Access"} title={"Enjoy our content from anywhere in the world, with support for multiple languages and regions."} />
