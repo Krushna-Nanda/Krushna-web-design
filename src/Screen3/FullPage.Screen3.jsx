@@ -20,7 +20,7 @@ const ContextCard = ({ heading, title }) => {
     <div className="text-gray-300">
       <div
         onClick={toggleContext}
-        className="flex cursor-pointer items-center w-fit gap-3 pb-3"
+        className="flex cursor-pointer items-center w-fit px-3 lg:px-0  gap-3 pb-3"
       >
         {isContextShow ? (
           <BiSolidDownArrow className="text-white" />
@@ -30,7 +30,7 @@ const ContextCard = ({ heading, title }) => {
         <h1 className="text-lg font-semibold">{heading}</h1>
       </div>
       {isContextShow && (
-        <p className="border-l-[0.1px] border-gray-600 pl-5 ml-2 mt-2 text-sm">
+        <p className="border-l-[0.1px] border-gray-600 mb-8 pl-8 pr-2 ml-2 mt-2 text-sm">
           {title}
         </p>
       )}
@@ -70,10 +70,10 @@ export default function FullPage_Screen3() {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center bg-black text-white min-h-[70vh]">
-      <div className="relative md:w-[50%] w-full pt-20 pl-16 pb-8">
-        <h1 className="text-5xl font-bold mb-8">Find What You Love</h1>
-        <div className="space-y-6">
+    <div className="flex flex-col md:flex-row justify-center items-center pt-3 bg-black text-white min-h-[70vh]">
+      <div className="relative md:w-[50%] w-full lg:pl-16 pb-8">
+        <h1 className="text-2xl  text-center lg:text-start  lg:text-4xl font-bold mb-8">Find What You Love</h1>
+        <div className="lg:space-y-6 space-y-3">
           <ContextCard
             heading={"Powerful Search"}
             title={
