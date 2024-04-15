@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <>
       {/* Hamburger Menu for Mobile */}
-      <div className="lg:hidden bg-gray-900 flex justify-between items-center gap-3 px-3">
+      <div className="lg:hidden bg-gray-900 text-right py-2 px-3">
         <div className="bg-gray-900 rounded-full">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
