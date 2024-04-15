@@ -18,7 +18,7 @@ function Cart({ title }) {
 
 export default function Footer() {
   return (
-    <footer className='relative bg-black w-full h-fit text-gray-400 pt-5 lg:pt-20'>
+    <footer className='relative bg-gray-900 w-full h-fit text-gray-400 pt-5 lg:pt-20'>
 
       <div className='px-5 lg:px-20'>
         <div className='mb-10'>
@@ -45,9 +45,9 @@ export default function Footer() {
 
         <button className='mb-5 bg-blue-900 text-white text-md px-5 py-3 rounded-md hover:scale-[1.1] transition ease-in-out duration-700'>Watch Videos</button>
 
-        <a href="#" onClick={() => window.location.reload()}>
+        <div href="#" className='w-fit' onClick={() => window.location.reload()}>
           <img className='w-40 lg:w-60 mb-10 hover:animate-bounce' src={logo} alt="Company Logo" />
-        </a>
+        </div>
       </div>
 
       <div className='border-t-[0.5px] border-gray-300 px-2 lg:px-5 pt-3 text-center'>
