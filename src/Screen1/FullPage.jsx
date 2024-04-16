@@ -1,8 +1,27 @@
+import { useEffect, useRef, useState } from "react";
 import watchingMovieWithEatingPuf from "../assets/Images/Watching_Movie_With_Pufcorn.jpg";
+import { FaSearch } from "react-icons/fa";
 import { ReactTyped } from "react-typed";
+import gsap from "gsap";
+import "./animation.css";
 
 export default function FullPage_Screen1() {
- 
+  const [isInputFeildVisible, setInputFeildVisible] = useState(false);
+  const inputRef = useRef();
+  const searchref = useRef();
+
+  // useEffect(() => {
+  //   if (isInputFeildVisible) {
+  //     gsap.fromTo(
+  //       inputRef.current,
+  //       { x: "100%", opacity: 0, duration: 1, ease: "ease-in-out" },
+  //       { x: 0, opacity: 1, duration: 1, ease: "ease-in-out" }
+  //     );
+
+  //     return;
+  //   }
+
+  // }, [isInputFeildVisible]);
 
   return (
     <div className="bg-black text-white w-full lg:h-[130vh] lg:pt-24">
@@ -44,15 +63,31 @@ export default function FullPage_Screen1() {
             </button>
           </div>
 
-          <div className="w-fit h-fit flex items-center justify-center bg-gradient-to-b from-purple-200 to-pink-200 rounded-xl overflow-hidden cursor-pointer shadow-md">
-            <input
-              placeholder="Search.."
-              id="input"
-              spellCheck={false}
-              className=" border-none outline-none caret-orange-500 bg-white  pl-2 text-gray-700 rounded-xl text-lg py-1 font-sans tracking-wide"
-              name="text"
-              type="text"
+          <div className="w-full lg:w-fit mt-3  h-fit  flex flex-col lg:flex-row gap-y-3  lg:gap-x-3 items-center rounded-xl overflow-hidden cursor-pointer shadow-md ">
+            <FaSearch
+              ref={searchref}
+              onClick={() => {
+                setInputFeildVisible((prev) => !prev);
+              }}
+              className="text-white  text-2xl cursor-pointer inline"
             />
+            {isInputFeildVisible ? (
+              <input
+                placeholder="Search.."
+                id="input"
+                spellCheck={false}
+                className=" w-full lg:w-72 border-none outline-none caret-orange-500 bg-white pl-2 text-gray-700 rounded-xl text-lg py-1 font-sans tracking-wide inline"
+                style={{ animation: "slide-in 1s ease-out forwards" }}
+              />
+            ) : (
+              <input
+                placeholder="Search.."
+                id="input"
+                spellCheck={false}
+                className="w-full lg:w-72 border-none outline-none caret-orange-500 bg-white pl-2 text-gray-700 rounded-xl text-lg py-1 font-sans tracking-wide inline"
+                style={{ animation: "slide-out 1s ease-out forwards" }}
+              />
+            )}
           </div>
         </div>
         {/* First left side box end ]above] */}

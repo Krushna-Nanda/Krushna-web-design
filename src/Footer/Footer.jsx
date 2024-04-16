@@ -3,13 +3,13 @@ import logo from "../assets/logo.png";
 
 function Cart({ title }) {
   return (
-    <span className='w-[44%] lg:w-[20%] text-sm text-start cursor-pointer transition duration-1000 ease-in-out'>
+    <span className='w-[44%] lg:w-[20%] text-sm text-start cursor-pointer  transition duration-1000 ease-in-out '>
       {title}
       <style jsx>{`
         span:hover {
           background-image: linear-gradient(to right, #6B46C1, #2563EB); /* Purple to Blue gradient */
-          border-radius: 5px; /* Optional: Add border-radius for rounded corners */
-          color: white; /* Change text color to white */
+          border-radius: 5px; 
+          color: white;
         }
       `}</style>
     </span>

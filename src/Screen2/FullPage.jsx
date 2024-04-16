@@ -16,9 +16,9 @@ export default function FullPage_Screen2() {
 
         <div className="flex flex-col lg:flex-row gap items-center lg:items-start px-5 py-8 lg:gap-x-8">
           <div className="flex gap-x-4 ">
-            <h className="bg-[#3D3D42] border-[0.1px] border-gray-200 h-fit px-3.5 py-0.5 rounded-md text-xl text-[#E5EODF]">
+            <h1 className="bg-[#3D3D42] border-[0.1px] border-gray-200 h-fit px-3.5 py-0.5 rounded-md text-xl text-[#E5EODF]">
               1
-            </h>
+            </h1>
             <div className="text-gray-300">
               <p className="text-2xl w-fit text-white text-[#E5EODF] ">
                 Featured 
@@ -27,18 +27,18 @@ export default function FullPage_Screen2() {
             </div>
           </div>
           <div className="flex gap-x-4">
-            <h className="bg-[#3D3D42] border-[0.1px] border-gray-200 h-fit px-3.5 py-0.5 rounded-md text-xl text-[#E5EODF]">
+            <h1 className="bg-[#3D3D42] border-[0.1px] border-gray-200 h-fit px-3.5 py-0.5 rounded-md text-xl text-[#E5EODF]">
               2
-            </h>
+            </h1>
             <div className="text-gray-300">
               <p className="text-xl w-fit text-white text-[#E5EODF] ">Exclusive Originals</p>
              <p>Dive into our collection of exclusive original content, Featuring captivating stories and innovative productions.</p>
             </div>
           </div>
           <div className="flex gap-x-4">
-            <h className="bg-[#3D3D42] border-[0.1px] border-gray-200 h-fit px-3.5 py-0.5 rounded-md text-xl text-[#E5EODF]">
+            <h1 className="bg-[#3D3D42] border-[0.1px] border-gray-200 h-fit px-3.5 py-0.5 rounded-md text-xl text-[#E5EODF]">
               3
-            </h>
+            </h1>
             <div>
               <p className="text-xl w-fit text-white  ">Trending Titles</p>
               <p className="text-gray-300">Be the first to discover the hottest videos that everyone is talking about, handpicked by our team of and join the conversation.</p>
