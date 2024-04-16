@@ -8,11 +8,11 @@ export default function FullPage_Screen2() {
   return (
     <div
       style={divStyle}
-      className="bg-black bg-cover object-cover bg-center  bg-no-repeat  text-white w-full h-[120vh] lg:h-fit"
+      className="bg-black bg-cover object-cover bg-center  bg-no-repeat  text-white w-full  lg:h-fit"
     >
       <div className="relative bg-black/80 w-full h-full flex flex-col justify-center gap-y-8 lg:px-20 ">
 
-        <p className="w-full text-3xl  lg:text-4xl px-2 text-gray-300 font-sans">Discover the Best Videos</p>
+        <p className="w-full text-3xl  lg:text-4xl px-2 pt-0 text-gray-300 font-sans">Discover the Best Videos</p>
 
         <div className="flex flex-col lg:flex-row gap items-center lg:items-start px-5 py-8 lg:gap-x-8">
           <div className="flex gap-x-4 ">

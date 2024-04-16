@@ -7,24 +7,9 @@ import "./animation.css";
 
 export default function FullPage_Screen1() {
   const [isInputFeildVisible, setInputFeildVisible] = useState(false);
-  const inputRef = useRef();
-  const searchref = useRef();
-
-  // useEffect(() => {
-  //   if (isInputFeildVisible) {
-  //     gsap.fromTo(
-  //       inputRef.current,
-  //       { x: "100%", opacity: 0, duration: 1, ease: "ease-in-out" },
-  //       { x: 0, opacity: 1, duration: 1, ease: "ease-in-out" }
-  //     );
-
-  //     return;
-  //   }
-
-  // }, [isInputFeildVisible]);
 
   return (
-    <div className="bg-black text-white w-full lg:h-[130vh] lg:pt-24">
+    <div className="bg-black text-white w-full lg:h-fit lg:pt-24 pb-8 lg:pb-10">
       {/* Container of both images and text */}
       <div className="flex flex-col-reverse z-20 lg:flex-row w-full h-full">
         <div className="relative flex flex-col gap-y-3 lg:w-[70%] pt-5 px-3 lg:pl-24 lg:pt-10 lg:gap-y-6 font-sans">
@@ -65,7 +50,6 @@ export default function FullPage_Screen1() {
 
           <div className="w-full lg:w-fit mt-3  h-fit  flex flex-col lg:flex-row gap-y-3  lg:gap-x-3 items-center rounded-xl overflow-hidden cursor-pointer shadow-md ">
             <FaSearch
-              ref={searchref}
               onClick={() => {
                 setInputFeildVisible((prev) => !prev);
               }}
