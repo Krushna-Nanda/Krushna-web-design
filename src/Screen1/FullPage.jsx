@@ -17,7 +17,7 @@ export default function FullPage_Screen1() {
             <p>
               StreamHub: Your Ultimate Video
               <ReactTyped
-                strings={["Streaming", "Waching"]}
+                strings={["Streaming", "Watching"]}
                 typeSpeed={100}
                 backSpeed={100}
                 loop
