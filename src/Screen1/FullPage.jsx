@@ -15,9 +15,9 @@ export default function FullPage_Screen1() {
         <div className="relative flex flex-col gap-y-3 lg:w-[70%] pt-5 px-3 lg:pl-24 lg:pt-10 lg:gap-y-6 font-sans">
           <div className="text-4xl lg:text-5xl tracking-wider font-bold leading-tight">
             <p>
-              StreamHub: Your Ultimate Video
+              StreamHub: Your Ultimate Video Destination
               <ReactTyped
-                strings={["Streaming", "Waching"]}
+                strings={["Streaming", "Watching"]}
                 typeSpeed={100}
                 backSpeed={100}
                 loop
@@ -29,7 +29,6 @@ export default function FullPage_Screen1() {
                   className="bg-transparent border-none outline-none"
                 />
               </ReactTyped>
-              Destination
             </p>
           </div>
           <div className="text-gray-300 flex flex-col lg:flex-row gap-y-1 text-base">
